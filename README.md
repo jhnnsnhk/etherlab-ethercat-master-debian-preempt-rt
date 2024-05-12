@@ -13,6 +13,10 @@ sudo apt install autoconf automake
 ```
 
 ```console
+sudo apt install pkg-config
+```
+
+```console
 mkdir xecatbuildx
 ```
 

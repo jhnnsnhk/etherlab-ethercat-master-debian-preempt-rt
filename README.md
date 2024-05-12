@@ -39,3 +39,7 @@ cd ethercat
 ```console
 sudo ./bootstrap
 ```
+
+```console
+cd
+```

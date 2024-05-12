@@ -49,9 +49,5 @@ sudo mv xecatbuildx /usr/local/src/
 ```
 
 ```console
-cd /usr/local/src/
-```
-
-```console
 sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
 ```

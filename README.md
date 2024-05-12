@@ -9,7 +9,11 @@ sudo apt update
 ```
 
 ```console
-sudo apt install autoconf automake
+sudo apt install autoconf
+```
+
+```console
+sudo apt install automake
 ```
 
 ```console

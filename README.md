@@ -43,3 +43,7 @@ sudo ./bootstrap
 ```console
 cd
 ```
+
+```console
+sudo mv xecatbuildx /usr/local/src/
+```

@@ -1,7 +1,7 @@
 # ethercat-master-setup
 
 ```console
-cd ~
+cd
 ```
 
 ```console

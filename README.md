@@ -53,5 +53,5 @@ cd /usr/local/src/
 ```
 
 ```console
-sudo ln -s /usr/local/src/xecatbuildx ~/ethercat
+sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
 ```

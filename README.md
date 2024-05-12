@@ -23,3 +23,7 @@ cd xecatbuildx
 ```console
 cd ethercat
 ```
+
+```console
+sudo ./bootstrap
+```

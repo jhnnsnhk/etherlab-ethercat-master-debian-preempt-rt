@@ -1,7 +1,11 @@
 # wiping a disk
 
-* open terminal
-* identify disk
+* show disks and partitions in order to identify the target disk
+
+```console
+sudo fdisk -l
+```
+  
 * wipe disk
 
 dd command to writes zeroes to the first few megabytes of the disk, which is where the partition table and GPT metadata are stored.
@@ -10,10 +14,10 @@ dd command to writes zeroes to the first few megabytes of the disk, which is whe
 sudo dd if=/dev/zero of=/dev/sdX bs=512 count=2048
 ```
 
-if=/dev/zero: Input file is a stream of zeroes.
-of=/dev/sdX: Output file is your disk.
-bs=512: Block size is 512 bytes.
-count=2048: Number of blocks to write. 2048 blocks of 512 bytes each will cover the first 1 MB of the disk, which includes the primary GPT header and partition table, as well as the protective MBR.
+if=/dev/zero: input file is a stream of zeroes.
+of=/dev/sdX: output file is your disk.
+bs=512: block size is 512 bytes.
+count=2048: number of blocks to write. 2048 blocks of 512 bytes each will cover the first 1 MB of the disk, which includes the primary GPT header and partition table, as well as the protective MBR.
 
 # ethercat master setup from scratch
 

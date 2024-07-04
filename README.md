@@ -69,3 +69,6 @@ sudo systemctl enable ethercat.service
 ```console
 sudo systemctl start ethercat.service
 ```
+```console
+modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1
+```

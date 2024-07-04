@@ -21,9 +21,19 @@ sudo dd if=/dev/zero of=/dev/sdX bs=512 count=2048
 # ethercat master setup from scratch
 
 * tested with debian version 12.6.0
-
 * install debian
-* 
+* update and upgrade the system
+
+```console
+sudo apt update
+```
+```console
+sudo apt upgrade
+```
+
+
+
+
 ```console
 cd
 ```

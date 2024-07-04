@@ -1,5 +1,4 @@
-# ethercat-master-setup
-
+# ethercat master setup from scratch
 * debian version 12.6.0
 
 ```console

@@ -6,12 +6,13 @@
 sudo fdisk -l
 ```
   
-* wipe disk
+* wipe target disk
   * dd command to writes zeroes to the first few megabytes of the disk, which is where the partition table and GPT metadata are stored.
   * if=/dev/zero: input file is a stream of zeroes.
   * of=/dev/sdX: output file is your disk.
   * bs=512: block size is 512 bytes.
   * count=2048: number of blocks to write. 2048 blocks of 512 bytes each will cover the first 1 MB of the disk, which includes the primary GPT header and partition table, as well as the protective MBR.
+  * replace /dev/sdX with the specific disk identifier (e.g., /dev/sda).
 
 ```console
 sudo dd if=/dev/zero of=/dev/sdX bs=512 count=2048

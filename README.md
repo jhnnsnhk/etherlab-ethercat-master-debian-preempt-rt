@@ -34,6 +34,13 @@ sudo apt upgrade
 sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc
 ```
 
+* check current kernel version
+
+
+```console
+uname -r
+```
+
 ```console
 cd
 ```

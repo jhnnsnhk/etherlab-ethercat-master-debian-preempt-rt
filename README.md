@@ -1,6 +1,6 @@
 # ethercat-master-setup
 
->>> incomplete
+* debian version 12.6
 
 ```console
 cd

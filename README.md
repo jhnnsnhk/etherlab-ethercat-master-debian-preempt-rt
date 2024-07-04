@@ -58,3 +58,11 @@ sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
 ```console
 systemctl status ethercat.service
 ```
+
+```console
+sudo systemctl enable ethercat.service
+```
+
+```console
+sudo systemctl start ethercat.service
+```

@@ -40,11 +40,11 @@ cd /usr/src
 ```
 
 * download kernel source code while ensuring that the selected kernel version has a corresponding PREEMPT-RT patch
-  * https://cdn.kernel.org/pub/linux/kernel/ (Kernels)
-  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/ (Real Time Patches)
+  * https://cdn.kernel.org/pub/linux/kernel/ (kernels)
+  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/ (real time patches)
 
 ```console
-sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.73.tar.xz
+sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.7.tar.xz
 ```
 
 * check current kernel version

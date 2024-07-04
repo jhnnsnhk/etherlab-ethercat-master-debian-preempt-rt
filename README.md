@@ -1,6 +1,8 @@
 # ethercat master setup from scratch
-* debian version 12.6.0
+* tested with debian version 12.6.0
 
+* install debian
+* 
 ```console
 cd
 ```

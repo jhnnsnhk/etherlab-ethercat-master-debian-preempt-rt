@@ -74,7 +74,7 @@ sudo xz -d patch-6.9-rt5.patch.xz
 
 * apply real time patch
 ```console
-patch -p1 < patch-6.9-rt5.patch
+sudo patch -p1 < patch-6.9-rt5.patch
 ```
 
 

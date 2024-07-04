@@ -40,8 +40,8 @@ cd /usr/src
 ```
 
 * download kernel source code while ensuring that the selected kernel version has a corresponding PREEMPT-RT patch
-  * https://cdn.kernel.org/pub/linux/kernel/
-  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/
+  * https://cdn.kernel.org/pub/linux/kernel/ (Kernels)
+  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/ (Real Time Patches)
 
 ```console
 sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.73.tar.xz

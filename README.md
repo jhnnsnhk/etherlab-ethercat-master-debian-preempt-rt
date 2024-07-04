@@ -47,13 +47,12 @@ cd /usr/src
 sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.7.tar.xz
 ```
 
-* check current kernel version
-
+* decompress kernel source code archive
 ```console
-uname -r
+sudo tar -xvf linux-6.9.7.tar.xz
 ```
 
-* download corresponding patch
+* download real time patch
 
 ```console
 patch -p1 < /path/to/patch-<kernel_version>-rt<patch_version>.patch

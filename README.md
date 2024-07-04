@@ -53,3 +53,8 @@ sudo mv xecatbuildx /usr/local/src/
 ```console
 sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
 ```
+## verify ethercat installation
+
+```console
+systemctl status ethercat.service
+```

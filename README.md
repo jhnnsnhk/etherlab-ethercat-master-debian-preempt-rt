@@ -48,16 +48,22 @@ sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.7.tar.xz
 ```
 
 * decompress kernel source code archive
+
 ```console
 sudo tar -xvf linux-6.9.7.tar.xz
 ```
 
-* download real time patch
+* navigate into kernel source code directory
 
 ```console
-patch -p1 < /path/to/patch-<kernel_version>-rt<patch_version>.patch
+cd linux-6.9.7
 ```
 
+* download real time patch archive
+
+```console
+sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.10/patch-5.10.73-rt54.patch.xz
+```
 
 ```console
 cd

@@ -39,7 +39,8 @@ sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 cd /usr/src
 ```
 
-* download kernel source code archive while ensuring that the selected version has a corresponding real time patch
+* download kernel source code archive
+  * ensure that the selected kernel version has a corresponding real time patch
   * kernels: https://cdn.kernel.org/pub/linux/kernel/
   * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
@@ -59,11 +60,23 @@ sudo tar -xvf linux-6.9.7.tar.xz
 cd linux-6.9.7
 ```
 
-* download real time patch archive
+* download real time patch archive into kernel source code directory
 
 ```console
-sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.10/patch-5.10.73-rt54.patch.xz
+sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.9/patch-6.9-rt5.patch.xz
 ```
+
+* decompress real time patch archive
+
+```console
+sudo xz -d patch-6.9-rt5.patch.xz
+```
+
+* apply real time patch
+```console
+patch -p1 < patch-6.9-rt5.patch
+```
+
 
 ```console
 cd

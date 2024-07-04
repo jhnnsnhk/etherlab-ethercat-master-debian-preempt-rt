@@ -39,7 +39,7 @@ sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 cd /usr/src
 ```
 
-* download kernel source code while ensuring that the selected kernel version has a corresponding real time patch
+* download kernel source code archive while ensuring that the selected version has a corresponding real time patch
   * kernels: https://cdn.kernel.org/pub/linux/kernel/
   * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 

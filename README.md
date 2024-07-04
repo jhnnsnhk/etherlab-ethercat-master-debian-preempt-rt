@@ -31,8 +31,10 @@ sudo apt update
 sudo apt upgrade
 ```
 
-
-
+* install necessary packages
+```console
+sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc
+```
 
 ```console
 cd

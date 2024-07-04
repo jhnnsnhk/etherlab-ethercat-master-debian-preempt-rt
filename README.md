@@ -39,9 +39,9 @@ sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 cd /usr/src
 ```
 
-* download kernel source code while ensuring that the selected kernel version has a corresponding PREEMPT-RT patch
-  * https://cdn.kernel.org/pub/linux/kernel/ (kernels)
-  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/ (real time patches)
+* download kernel source code while ensuring that the selected kernel version has a corresponding real time patch
+  * kernels: https://cdn.kernel.org/pub/linux/kernel/
+  * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 ```console
 sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.7.tar.xz

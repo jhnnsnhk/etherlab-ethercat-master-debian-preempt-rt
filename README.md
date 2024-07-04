@@ -34,12 +34,31 @@ sudo apt upgrade
 sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc
 ```
 
-* check current kernel version
+* navigate to download directory
+```console
+cd /usr/src
+```
 
+* download kernel source code while ensuring that the selected kernel version has a corresponding PREEMPT-RT patch
+  * https://cdn.kernel.org/pub/linux/kernel/
+  * https://cdn.kernel.org/pub/linux/kernel/projects/rt/
+
+```console
+sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.73.tar.xz
+```
+
+* check current kernel version
 
 ```console
 uname -r
 ```
+
+* download corresponding patch
+
+```console
+patch -p1 < /path/to/patch-<kernel_version>-rt<patch_version>.patch
+```
+
 
 ```console
 cd

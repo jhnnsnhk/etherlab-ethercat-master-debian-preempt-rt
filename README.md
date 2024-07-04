@@ -53,6 +53,9 @@ sudo mv xecatbuildx /usr/local/src/
 ```console
 sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
 ```
+
+## install ethercat
+
 ## verify ethercat installation
 
 ```console

@@ -1,6 +1,6 @@
 # ethercat-master-setup
 
-## PREEMPT_RT patch installation
+## PREEMPT_RT patch installation >>> incomplete
 
 ```console
 cd

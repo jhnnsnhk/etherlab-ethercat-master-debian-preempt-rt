@@ -109,6 +109,12 @@ sudo reboot
 ```
 
 * optional kernel panic management
+
+*instal vim
+```console
+cd /lib/modules/6.1.96-rt35
+```
+
 * strip unneeded symbols of object files
 ```console
 cd /lib/modules/6.1.96-rt35

@@ -111,27 +111,23 @@ sudo reboot
 # ethercat master setup
 
 ```console
-cd
+cd ~
 ```
 
 ```console
 sudo apt update
 ```
 
-```console
-sudo apt install autoconf
-```
+* install required packages
 
 ```console
-sudo apt install automake
+sudo apt install autoconf automake libtool pkg-config git -y
 ```
 
-```console
-sudo apt install libtool
-```
+* clone github repository
 
 ```console
-sudo apt install pkg-config
+git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
 
 ```console

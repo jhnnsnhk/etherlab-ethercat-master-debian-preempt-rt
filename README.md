@@ -20,17 +20,18 @@ sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 
 # ethercat master setup from scratch using debian
 
-* update and upgrade the system
+* step 01: update the system
 
 ```console
 sudo apt update
 ```
 
+step 02: upgrade the system
 ```console
 sudo apt upgrade -y
 ```
 
-* install necessary packages
+* step 03: install required packages
 ```console
 sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc wget dwarves
 ```
@@ -98,6 +99,7 @@ ls /usr/src/linux-6.1.96/System.map
 ```
 
 * (optional) if System.map file is not present
+  * evidence indicates that a missing System.map at this point is caused by a missing pacakge in step 03.
   * create System.map file
   * sort System.map file
 ```console

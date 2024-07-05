@@ -119,6 +119,12 @@ sudo make modules_install
 sudo make install
 ```
 
+* reboot system
+```console
+sudo reboot
+```
+
+
 # incomplete
 
 ```console

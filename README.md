@@ -130,6 +130,12 @@ sudo apt install autoconf automake libtool pkg-config git -y
 git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
 
+* navigate into ethercat directory
+
+```console
+cd ethercat
+```
+
 ```console
 mkdir xecatbuildx
 ```

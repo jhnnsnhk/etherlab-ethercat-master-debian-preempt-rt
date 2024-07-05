@@ -110,7 +110,7 @@ sudo reboot
 
 * optional kernel panic management
 
-*instal vim
+* install vim
 ```console
 cd /lib/modules/6.1.96-rt35
 ```
@@ -134,9 +134,11 @@ COMPRESS=xz
 
 [:wq]
 
+* update initramfs
 
-
-
+```console
+sudo update-initramfs -u
+```
 
 
 

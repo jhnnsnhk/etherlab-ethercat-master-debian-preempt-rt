@@ -78,7 +78,7 @@ sudo xz -d patch-6.1.96-rt35.patch.xz
 sudo patch -p1 < patch-6.1.96-rt35.patch.xz
 ```
 
-* configure kernel
+* configure kernel 
   * general setup >>> preemption model >>> fully preemptible kernel (real-time)
   * processor type and features >>> timer frequency >>> 1000 Hz
   * save & exit
@@ -86,13 +86,17 @@ sudo patch -p1 < patch-6.1.96-rt35.patch.xz
 sudo make menuconfig
 ```
 
-* build kernel
+* compile kernel using all available CPU cores
 ```console
 sudo make -j$(nproc)
 ```
+
+* install kernel modules 
 ```console
 sudo make modules_install
 ```
+
+* install compiled kernel 
 ```console
 sudo make install
 ```

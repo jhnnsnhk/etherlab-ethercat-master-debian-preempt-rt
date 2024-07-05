@@ -26,7 +26,7 @@ sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 sudo apt update
 ```
 
-step 02: upgrade the system
+* step 02: upgrade the system
 ```console
 sudo apt upgrade -y
 ```

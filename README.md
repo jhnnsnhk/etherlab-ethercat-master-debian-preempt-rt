@@ -27,7 +27,7 @@ sudo apt update
 ```
 
 ```console
-sudo apt upgrade
+sudo apt upgrade -y
 ```
 
 * install necessary packages

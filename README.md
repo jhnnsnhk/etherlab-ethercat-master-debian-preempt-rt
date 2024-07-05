@@ -5,7 +5,7 @@
 ```console
 sudo fdisk -l
 ```
-  
+
 * wipe target disk
   * dd command to writes zeroes to the first few megabytes of the disk, which is where the partition table and GPT metadata are stored.
   * if=/dev/zero: input file is a stream of zeroes.
@@ -18,13 +18,14 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/sdX bs=512 count=2048
 ```
 
-# install ethercat master setup from scratch on debian version 12.6.0
+# install ethercat master setup from scratch on debian operating system
 
 * update and upgrade the system
 
 ```console
 sudo apt update
 ```
+
 ```console
 sudo apt upgrade
 ```
@@ -40,7 +41,7 @@ cd /usr/src
 ```
 
 * download kernel source code archive
-  * ensure that the selected kernel version has a corresponding real time patch
+  * select kernel version that has a matching real time patch version
   * kernels: https://cdn.kernel.org/pub/linux/kernel/
 
 ```console
@@ -60,17 +61,23 @@ cd linux-6.1.96
 ```
 
 * download real time patch archive into kernel source code directory
-  * ensure that the selected real time patch version matches the kernel version
+  * select real time patch version that matches the kernel version
   * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 ```console
 sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
 
-* decompress and apply real time patch
+* decompress real time patch
 ```console
-sudo xzcat patch-6.1.96-rt35.patch.xz | patch -p1
+sudo xz -d patch-6.1.96-rt35.patch.xz
 ```
+
+* apply real time patch
+```console
+sudo patch -p1 < patch-6.1.96-rt35.patch.xz
+```
+
 
 # incomplete
 

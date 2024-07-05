@@ -144,28 +144,34 @@ cd ethercat
  git checkout stable-1.6
 ```
 
-```console
-cd xecatbuildx
-```
-
-```console
-cd ethercat
-```
+* run bootstrap script
 
 ```console
 sudo ./bootstrap
 ```
 
+* configure ethercat master setup
+
 ```console
-cd
+sudo ./configure --enable-8139too=no
+```
+
+* run make
+
+```console
+sudo make
 ```
 
 ```console
-sudo mv xecatbuildx /usr/local/src/
+sudo make modules
 ```
 
 ```console
-sudo ln -s /usr/local/src/xecatbuildx/ethercat ~/ethercat
+sudo make install
+```
+
+```console
+sudo make modules_install
 ```
 
 ## install ethercat

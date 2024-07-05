@@ -123,12 +123,17 @@ cd /lib/modules/6.1.96-rt35
 ```console
 sudo find . -name *.ko -exec strip --strip-unneeded {} +
 ```
+
 * change the compression format
+```console
+sudo apt install vim
+```
 
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```
-* change COMPRESS=lz4 to COMPRESS=xz
+
+change COMPRESS=lz4 to COMPRESS=xz
 
 COMPRESS=xz 
 

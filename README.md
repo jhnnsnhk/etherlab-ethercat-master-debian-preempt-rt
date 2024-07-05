@@ -108,6 +108,34 @@ sudo make install
 sudo reboot
 ```
 
+* optional kernel panic management
+* strip unneeded symbols of object files
+```console
+cd /lib/modules/6.1.96-rt35
+```
+
+```console
+sudo find . -name *.ko -exec strip --strip-unneeded {} +
+```
+* change the compression format
+
+```console
+sudo vi /etc/initramfs-tools/initramfs.conf
+```
+* Modify COMPRESS=lz4 to COMPRESS=xz (line 53)
+
+COMPRESS=xz 
+
+[:wq]
+
+
+
+
+
+
+
+
+
 # install ethercat master
 
 * step 01: navigate into home directory

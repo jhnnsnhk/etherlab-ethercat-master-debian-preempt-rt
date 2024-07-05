@@ -103,9 +103,13 @@ ls /usr/src/linux-6.1.96/System.map
 ```
 
 * (optional) if System.map file is not present
-
+  * create System.map file 
 ```console
 sudo make vmlinux
+```
+  * sort System.map file 
+```console
+sudo nm vmlinux | sort > System.map
 ```
 
 ```console

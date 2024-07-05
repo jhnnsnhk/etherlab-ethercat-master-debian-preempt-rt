@@ -79,9 +79,9 @@ sudo patch -p1 < patch-6.1.96-rt35.patch.xz
 ```
 
 * configure kernel
- * general setup >>> preemption model >>> fully preemptible kernel (real-time)
- * processor type and features >>> timer frequency >>> 1000 Hz
- * save & exit
+  * general setup >>> preemption model >>> fully preemptible kernel (real-time)
+  * processor type and features >>> timer frequency >>> 1000 Hz
+  * save & exit
 ```console
 sudo make menuconfig
 ```

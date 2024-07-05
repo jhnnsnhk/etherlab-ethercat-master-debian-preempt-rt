@@ -18,7 +18,7 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 ```
 
-# ethercat master setup from scratch using debian
+# real time patch setup
 
 * step 01: update the system
 
@@ -108,8 +108,7 @@ sudo make install
 sudo reboot
 ```
 
-
-# incomplete
+# ethercat master setup
 
 ```console
 cd

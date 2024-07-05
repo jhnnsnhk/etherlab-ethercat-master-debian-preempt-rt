@@ -1,6 +1,6 @@
 # general tools: wiping disks
 
-* show disks and partitions in order to identify the target disk
+* show disks and partitions in order to identify the target disk identifier
 
 ```console
 sudo fdisk -l

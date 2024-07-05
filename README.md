@@ -18,7 +18,7 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 ```
 
-# install ethercat master setup from scratch using debian
+# ethercat master setup from scratch using debian
 
 * update and upgrade the system
 

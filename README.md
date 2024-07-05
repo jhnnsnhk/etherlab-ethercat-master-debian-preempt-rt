@@ -128,7 +128,7 @@ sudo find . -name *.ko -exec strip --strip-unneeded {} +
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```
-* Modify COMPRESS=lz4 to COMPRESS=xz (line 53)
+* change COMPRESS=lz4 to COMPRESS=xz
 
 COMPRESS=xz 
 

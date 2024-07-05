@@ -33,7 +33,7 @@ sudo apt upgrade -y
 
 * step 03: install required packages
 ```console
-sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc wget dwarves -y
+sudo apt install bc bison build-essential dwarves flex libelf-dev libncurses-dev libssl-dev wget -y
 ```
 
 * navigate to download directory

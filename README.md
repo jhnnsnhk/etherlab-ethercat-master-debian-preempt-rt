@@ -32,7 +32,7 @@ sudo apt upgrade
 
 * install necessary packages
 ```console
-sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc
+sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc wget dwarves
 ```
 
 * navigate to download directory
@@ -93,13 +93,27 @@ sudo make menuconfig
 ```
 
 * compile kernel using all available CPU cores
-
 ```console
 sudo make -j$(nproc)
 ```
 
-* install kernel modules
+* verify if System.map file is present
+```console
+ls /usr/src/linux-6.1.96/System.map
+```
 
+* (optional) if System.map file is not present
+
+```console
+sudo make vmlinux
+```
+
+```console
+sudo nm vmlinux | sort > System.map
+```
+
+
+* install kernel modules
 ```console
 sudo make modules_install
 ```

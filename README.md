@@ -140,8 +140,10 @@ COMPRESS=xz
 sudo update-initramfs -u
 ```
 
-
-
+* verify boot directory
+* config-6.1.96-rt35
+* initrd.img-6.1.96-rt35
+* vmlinuz-6.1.96-rt35
 
 
 # install ethercat master

@@ -138,8 +138,10 @@ git clone https://gitlab.com/etherlab.org/ethercat.git
 cd ethercat
 ```
 
+* checkout latest stable branch
+
 ```console
-mkdir xecatbuildx
+ git checkout stable-1.6
 ```
 
 ```console

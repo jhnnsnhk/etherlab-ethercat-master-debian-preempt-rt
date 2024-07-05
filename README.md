@@ -1,4 +1,4 @@
-# wiping disks (optional)
+# wipe disks (optional)
 
 * show disks and partitions in order to identify the target disk identifier
 
@@ -18,7 +18,7 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 ```
 
-# real time patch setup
+# install real time patch
 
 * step 01: update the system
 

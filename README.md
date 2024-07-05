@@ -93,22 +93,6 @@ sudo make menuconfig
 sudo make -j$(nproc)
 ```
 
-* verify if System.map file is present
-```console
-ls /usr/src/linux-6.1.96/System.map
-```
-
-* (optional) if System.map file is not present
-  * evidence indicates that a missing System.map at this point is caused by a missing pacakge in step 03.
-  * create System.map file
-  * sort System.map file
-```console
-sudo make vmlinux
-```
-```console
-sudo nm vmlinux | sort > System.map
-```
-
 * install kernel modules
 ```console
 sudo make modules_install

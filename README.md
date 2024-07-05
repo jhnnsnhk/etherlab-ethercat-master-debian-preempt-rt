@@ -45,38 +45,32 @@ cd /usr/src
   * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 ```console
-sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.7.tar.xz
+sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
 
 * decompress kernel source code archive
 
 ```console
-sudo tar -xvf linux-6.9.7.tar.xz
+sudo tar -xvf linux-6.1.96.tar.xz
 ```
 
 * navigate into kernel source code directory
 
 ```console
-cd linux-6.9.7
+cd linux-6.1.96
 ```
 
 * download real time patch archive into kernel source code directory
-
 ```console
-sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.9/patch-6.9-rt5.patch.xz
+sudo wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
 
-* decompress real time patch archive
-
+* decompress and apply real time patch
 ```console
-sudo xz -d patch-6.9-rt5.patch.xz
+sudo xzcat patch-6.1.96-rt35.patch.xz | patch -p1
 ```
 
-* apply real time patch
-```console
-sudo patch -p1 < patch-6.9-rt5.patch
-```
-
+# incomplete
 
 ```console
 cd

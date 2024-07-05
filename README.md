@@ -42,7 +42,6 @@ cd /usr/src
 * download kernel source code archive
   * ensure that the selected kernel version has a corresponding real time patch
   * kernels: https://cdn.kernel.org/pub/linux/kernel/
-  * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 ```console
 sudo wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz

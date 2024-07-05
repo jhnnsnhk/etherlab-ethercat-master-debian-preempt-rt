@@ -110,6 +110,8 @@ sudo reboot
 
 # ethercat master setup
 
+* step 01: navigate into home directory
+
 ```console
 cd ~
 ```

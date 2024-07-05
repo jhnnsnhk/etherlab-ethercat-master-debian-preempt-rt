@@ -86,6 +86,16 @@ sudo patch -p1 < patch-6.1.96-rt35.patch.xz
 sudo make menuconfig
 ```
 
+* build kernel
+```console
+sudo make -j$(nproc)
+```
+```console
+sudo make modules_install
+```
+```console
+sudo make install
+```
 
 # incomplete
 

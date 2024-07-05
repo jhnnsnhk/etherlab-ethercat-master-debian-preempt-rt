@@ -145,6 +145,37 @@ sudo update-initramfs -u
 * initrd.img-6.1.96-rt35
 * vmlinuz-6.1.96-rt35
 
+* update grub
+
+```console
+sudo update-grub
+```
+
+* reboot
+
+```console
+sudo reboot
+```
+
+* verify
+
+```console
+uname -a
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # install ethercat master
 

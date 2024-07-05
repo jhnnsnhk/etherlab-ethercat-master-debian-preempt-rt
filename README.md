@@ -75,7 +75,7 @@ sudo xz -d patch-6.1.96-rt35.patch.xz
 
 * apply real time patch
 ```console
-sudo patch -p1 < patch-6.1.96-rt35.patch.xz
+sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
 
 * configure kernel 

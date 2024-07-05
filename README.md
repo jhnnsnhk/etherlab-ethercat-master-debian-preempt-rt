@@ -1,4 +1,4 @@
-# general tools: wiping disks
+# wiping disks (optional)
 
 * show disks and partitions in order to identify the target disk identifier
 

@@ -108,7 +108,7 @@ sudo make install
 sudo reboot
 ```
 
-# ethercat master setup
+# install ethercat master
 
 * step 01: navigate into home directory
 

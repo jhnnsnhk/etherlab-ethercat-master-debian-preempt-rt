@@ -78,12 +78,7 @@ sudo xz -d patch-6.1.96-rt35.patch.xz
 sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
 
-* copy configuration of currently running kernel
-```console
-sudo cp /boot/config-$(uname -r) .config
-```
-
-* configure kernel 
+* configure kernel
   * general setup >>> preemption model >>> fully preemptible kernel (real-time)
   * processor type and features >>> timer frequency >>> 1000 Hz
   * save & exit

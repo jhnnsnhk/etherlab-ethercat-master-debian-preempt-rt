@@ -142,7 +142,7 @@ uname -a
 
 
 
-# Install Ethercat Master
+# Install Ethercat Master for SYSTEMD Distributions
 
 #### Clone Github Repository
 ```console

@@ -188,11 +188,11 @@ ip addr show
 ```console
 sudo vi /opt/xethercatx/etc/ethercat.conf
 ```
-* VIM Activate Editing Mode: i
+* VIM Activate Editing Mode >>> i
 * Navigate to MASTER0_DEVICE="" and paste MAC address CTRL + SHIFT + V
 * Navigate to DEVICE_MODULES="" and paste driver keyword
-* VIM Activate Normal Mode: Esc
-* VIM Write & Quit: :wq + Return
+* VIM Activate Normal Mode >>> Esc
+* VIM Write & Quit >>> :wq + Return
 
 ## verify ethercat installation
 

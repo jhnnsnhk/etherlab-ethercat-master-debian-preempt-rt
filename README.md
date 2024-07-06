@@ -197,7 +197,7 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 #### Copy Ethercat Master
 
 ```console
-
+sudo mkdir -p /etc/sysconfig/ && sudo cp /opt/xethercatx/etc/ethercat /etc/sysconfig/
 ```
 
 #### Start Ethercat Master

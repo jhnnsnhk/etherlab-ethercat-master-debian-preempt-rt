@@ -14,29 +14,24 @@ sudo reboot
 
 # Install Real Time Patch
 
-#### download kernel source code archive
-  * select kernel version that has a matching real time patch version
-  * kernels: https://cdn.kernel.org/pub/linux/kernel/
-
+#### Download Kernel Source Code Archive
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
+* Select kernel version that has a matching real time patch version
+* Kernels: https://cdn.kernel.org/pub/linux/kernel/
 
-* decompress kernel source code archive
-
+#### Decompress Kernel Source Code Archive
 ```console
 sudo tar -xvf /usr/src/linux-6.1.96.tar.xz
 ```
 
-* navigate into kernel source code directory
-
-* download real time patch archive into kernel source code directory
-  * select real time patch version that matches the kernel version
-  * patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
-
+* Download Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
+* Select real time patch version that matches the kernel version
+* Patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 * decompress real time patch archive
 ```console

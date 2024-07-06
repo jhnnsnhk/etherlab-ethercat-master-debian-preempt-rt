@@ -33,36 +33,35 @@ sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/proj
 * Select real time patch version that matches the kernel version
 * Patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
-* decompress real time patch archive
+#### Decompress Real Time Patch Archive
 ```console
 sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 ```
 
-* apply real time patch
+#### Apply Real Time Patch
 ```console
 cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
 
-* configure kernel
-  * general setup >>> preemption model >>> fully preemptible kernel (real-time)
-  * processor type and features >>> timer frequency >>> 1000 Hz
-  * save & exit
-
+#### Configure Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```
+* general setup >>> preemption model >>> fully preemptible kernel (real-time)
+* processor type and features >>> timer frequency >>> 1000 Hz
+* save & exit
 
-* compile kernel using all available CPU cores
+#### Compile Kernel Using All Available CPU Cores
 ```console
 cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 ```
 
-* install kernel modules
+#### Install Kernel Modules
 ```console
 cd /usr/src/linux-6.1.96 && sudo make modules_install
 ```
 
-* install compiled kernel 
+#### install compiled kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make install
 ```

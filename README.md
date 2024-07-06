@@ -11,7 +11,7 @@ sudo apt upgrade -y
 ```
 
 ```console
-sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config wget -y
+sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config vim wget -y
 ```
 
 # Install Real Time Patch

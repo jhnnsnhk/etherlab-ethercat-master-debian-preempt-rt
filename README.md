@@ -197,7 +197,7 @@ sudo apt update
 * install required packages
 
 ```console
-sudo apt install autoconf automake libtool pkg-config git -y
+sudo apt install autoconf automake libtool mlocate pkg-config git -y
 ```
 
 * clone github repository

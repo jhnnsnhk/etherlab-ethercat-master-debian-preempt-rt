@@ -54,22 +54,22 @@ cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
   * save & exit
 
 ```console
-sudo make menuconfig
+cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```
 
 * compile kernel using all available CPU cores
 ```console
-sudo make -j$(nproc)
+cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 ```
 
 * install kernel modules
 ```console
-sudo make modules_install
+cd /usr/src/linux-6.1.96 && sudo make modules_install
 ```
 
 * install compiled kernel 
 ```console
-sudo make install
+cd /usr/src/linux-6.1.96 && sudo make install
 ```
 
 * reboot system

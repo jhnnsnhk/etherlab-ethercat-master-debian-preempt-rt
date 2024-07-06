@@ -18,7 +18,7 @@ sudo reboot
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
-* Select kernel version that has a matching real time patch version
+* Select Kernel Version That Has a Matching Real Time Patch Version
 * Kernels: https://cdn.kernel.org/pub/linux/kernel/
 
 #### Decompress Kernel Source Code Archive
@@ -30,7 +30,7 @@ sudo tar -xvf /usr/src/linux-6.1.96.tar.xz
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
-* Select real time patch version that matches the kernel version
+* Select Real Time Patch Version That Matches the Kernel Version
 * Patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
 
 #### Decompress Real Time Patch Archive
@@ -47,9 +47,9 @@ cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```
-* general setup >>> preemption model >>> fully preemptible kernel (real-time)
-* processor type and features >>> timer frequency >>> 1000 Hz
-* save & exit
+* General Setup >>> Preemption Model >>> Fully Preemptible Kernel (Real-Time)
+* Processor Type and Features >>> Timer Frequency >>> 1000 Hz
+* Save & Exit
 
 #### Compile Kernel Using All Available CPU Cores
 ```console
@@ -72,7 +72,6 @@ sudo reboot
 ```
 
 #### Verify Kernel Version
-
 ```console
 uname -a
 ```

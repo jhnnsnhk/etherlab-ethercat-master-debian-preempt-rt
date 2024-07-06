@@ -176,7 +176,9 @@ sudo make install
 ```console
 sudo make modules_install
 ```
-
+```console
+sudo depmod
+```
 #### Identify Relevant Network Interface MAC Address
 
 ```console

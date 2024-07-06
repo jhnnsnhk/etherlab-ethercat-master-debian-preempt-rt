@@ -182,7 +182,7 @@ uname -a
 
 
 
-# install ethercat master
+# Install Ethercat Master
 
 * step 01: navigate into home directory
 

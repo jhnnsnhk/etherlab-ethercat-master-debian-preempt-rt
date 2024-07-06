@@ -233,21 +233,13 @@ sudo ./configure --enable-8139too=no
 * Build Ethercat Master
 
 ```console
-sudo make
-```
-
-```console
-sudo make modules
+sudo make all modules
 ```
 
 * Install Ethercat Master
 
 ```console
-sudo make install
-```
-
-```console
-sudo make modules_install
+make modules_install install
 ```
 
 * Identify Relevant Network Interface MAC Address

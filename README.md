@@ -40,9 +40,11 @@ sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 
 #### Apply Real Time Patch
 ```console
-cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
+cd /usr/src/linux-6.1.96
 ```
-
+```console
+sudo patch -p1 < patch-6.1.96-rt35.patch
+```
 #### Configure Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig

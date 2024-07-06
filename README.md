@@ -18,6 +18,12 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 ```
 
+# Install Required Packages
+
+```console
+sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config wget -y
+```
+
 # Install Real Time Patch
 
 * step 01: update the system
@@ -32,9 +38,7 @@ sudo apt upgrade -y
 ```
 
 * step 03: install required packages
-```console
-sudo apt install bc bison build-essential dwarves flex libelf-dev libncurses-dev libssl-dev wget -y
-```
+
 
 * navigate to download directory
 ```console
@@ -196,9 +200,7 @@ sudo apt update
 
 * install required packages
 
-```console
-sudo apt install autoconf automake libtool mlocate pkg-config git -y
-```
+
 
 * clone github repository
 

@@ -182,19 +182,11 @@ uname -a
 
 # Install Ethercat Master
 
-* step 01: navigate into home directory
+* navigate into home directory
 
 ```console
 cd ~
 ```
-
-```console
-sudo apt update
-```
-
-* install required packages
-
-
 
 * clone github repository
 

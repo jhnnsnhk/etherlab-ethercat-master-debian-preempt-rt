@@ -96,22 +96,17 @@ uname -a
 
 # Optional: Kernel Panic Management
 
-* install vim
 ```console
 cd /lib/modules/6.1.96-rt35
 ```
-
 * strip unneeded symbols of object files
 ```console
 cd /lib/modules/6.1.96-rt35
 ```
-
 ```console
 sudo find . -name *.ko -exec strip --strip-unneeded {} +
 ```
-
 * change the compression format
-
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```

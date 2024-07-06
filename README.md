@@ -14,7 +14,7 @@ sudo reboot
 
 # Install Real Time Patch
 
-* download kernel source code archive
+#### download kernel source code archive
   * select kernel version that has a matching real time patch version
   * kernels: https://cdn.kernel.org/pub/linux/kernel/
 

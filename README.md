@@ -227,9 +227,11 @@ sudo make all modules
 * Install Ethercat Master
 
 ```console
-sudo make modules_install install
+sudo make install
 ```
-
+```console
+sudo make modules_install
+```
 * Identify Relevant Network Interface MAC Address
 
 ```console

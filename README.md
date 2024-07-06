@@ -194,20 +194,23 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
 
-#### Copy Ethercat Master
+#### Copy ethercat.conf File
 
 ```console
 sudo mkdir -p /etc/sysconfig/
 ```
 
 ```console
-sudo cp /opt/xethercatx/etc/ethercat /etc/sysconfig/
+sudo cp /opt/xethercatx/etc/ethercat.conf /etc/sysconfig/
 ```
 
 #### Start Ethercat Master
 
 ```console
 sudo /opt/xethercatx/etc/init.d/ethercat start
+```
+```console
+sudo ln -s /opt/xethercatx/etc/init.d/ethercat /etc/init.d/
 ```
 
 ## verify ethercat installation

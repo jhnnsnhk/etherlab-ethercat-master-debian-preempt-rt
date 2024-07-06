@@ -216,7 +216,7 @@ sudo ln -s /opt/xethercatx/etc/init.d/ethercat /etc/init.d/
 ## verify ethercat installation
 
 ```console
-systemctl status ethercat.service
+sudo systemctl status ethercat.service
 ```
 
 ```console
@@ -226,6 +226,11 @@ sudo systemctl enable ethercat.service
 ```console
 sudo systemctl start ethercat.service
 ```
+
+```console
+sudo systemctl status ethercat.service
+```
+
 ```console
 modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1
 ```

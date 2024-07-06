@@ -70,7 +70,7 @@ cd /usr/src/linux-6.1.96 && sudo make install
 sudo reboot
 ```
 
-#### Verify Kernel Version
+#### Verify Active Kernel Version
 ```console
 uname -a
 ```

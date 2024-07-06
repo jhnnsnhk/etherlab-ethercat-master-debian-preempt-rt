@@ -199,7 +199,9 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 ```console
 sudo systemctl enable ethercat.service
 ```
-
+```console
+sudo reboot
+```
 
 
 

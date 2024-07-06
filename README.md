@@ -94,8 +94,7 @@ sudo reboot
 uname -a
 ```
 
-
-* optional kernel panic management
+# Optional: Kernel Panic Management
 
 * install vim
 ```console

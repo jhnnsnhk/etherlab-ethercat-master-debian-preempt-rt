@@ -195,6 +195,15 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
 
+#### Enable Service to Start Automatically at Boot Time
+```console
+sudo systemctl enable ethercat.service
+```
+
+
+
+
+
 #### Create Symbolic Link
 ```console
 sudo ln -s /opt/xethercatx/etc/init.d/ethercat /etc/init.d/

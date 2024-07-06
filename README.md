@@ -224,13 +224,13 @@ cd ethercat
 sudo ./bootstrap
 ```
 
-* configure ethercat master setup
+* Configure Ethercat Master
 
 ```console
 sudo ./configure --enable-8139too=no
 ```
 
-* run make
+* Build Ethercat Master
 
 ```console
 sudo make
@@ -240,6 +240,8 @@ sudo make
 sudo make modules
 ```
 
+* Install Ethercat Master
+
 ```console
 sudo make install
 ```
@@ -248,7 +250,11 @@ sudo make install
 sudo make modules_install
 ```
 
-## install ethercat
+* Identify Relevant Network Interface MAC Address
+
+```console
+ip addr show
+```
 
 ## verify ethercat installation
 

@@ -61,17 +61,17 @@ cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 cd /usr/src/linux-6.1.96 && sudo make modules_install
 ```
 
-#### install compiled kernel
+#### Install Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make install
 ```
 
-* reboot system
+#### Reboot System
 ```console
 sudo reboot
 ```
 
-* verify kernel version
+#### Verify Kernel Version
 
 ```console
 uname -a

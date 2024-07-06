@@ -194,6 +194,12 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
 
+#### Start Ethercat Master
+
+```console
+sudo /opt/xethercatx/etc/init.d/ethercat start
+```
+
 ## verify ethercat installation
 
 ```console

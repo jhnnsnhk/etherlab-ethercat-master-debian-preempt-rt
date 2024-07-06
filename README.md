@@ -111,9 +111,6 @@ sudo find . -name *.ko -exec strip --strip-unneeded {} +
 ```
 
 * change the compression format
-```console
-sudo apt install vim
-```
 
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf

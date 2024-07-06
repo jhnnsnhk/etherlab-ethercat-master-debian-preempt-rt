@@ -227,7 +227,7 @@ sudo ./bootstrap
 * Configure Ethercat Master
 
 ```console
-sudo ./configure --enable-8139too=no
+sudo ./configure --enable-8139too=no --prefix=/opt/etherlab
 ```
 
 * Build Ethercat Master

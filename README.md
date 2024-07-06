@@ -223,6 +223,11 @@ sudo make modules_install
 ip addr show
 ```
 
+* Open ethercat.conf
+
+```console
+ip addr show
+```
 ## verify ethercat installation
 
 ```console

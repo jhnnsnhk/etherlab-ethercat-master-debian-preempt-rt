@@ -144,16 +144,10 @@ uname -a
 
 # Install Ethercat Master
 
-* navigate into home directory
+#### Clone Github Repository
 
 ```console
-cd ~
-```
-
-* clone github repository
-
-```console
-git clone https://gitlab.com/etherlab.org/ethercat.git
+cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
 
 * navigate into ethercat directory

@@ -145,60 +145,50 @@ uname -a
 # Install Ethercat Master
 
 #### Clone Github Repository
-
 ```console
 cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
 
-* navigate into ethercat directory
-
+#### Checkout Latest Stable Branch
 ```console
-cd ethercat
+ cd ~/ethercat/ && git checkout stable-1.6
 ```
 
-* checkout latest stable branch
-
+#### Run Bootstrap Script
 ```console
- git checkout stable-1.6
+cd ~/ethercat/ && sudo ./bootstrap
 ```
 
-* run bootstrap script
-
+#### Configure Ethercat Master
 ```console
-sudo ./bootstrap
+cd ~/ethercat/ && sudo ./configure --enable-8139too=no --prefix=/opt/xethercatx
 ```
 
-* Configure Ethercat Master
-
-```console
-sudo ./configure --enable-8139too=no --prefix=/opt/etherlab
-```
-
-* Build Ethercat Master
-
+#### Build Ethercat Master
 ```console
 sudo make all modules
 ```
 
-* Install Ethercat Master
-
+#### Install Ethercat Master
 ```console
 sudo make install
 ```
 ```console
 sudo make modules_install
 ```
-* Identify Relevant Network Interface MAC Address
+
+#### Identify Relevant Network Interface MAC Address
 
 ```console
 ip addr show
 ```
 
-* Open ethercat.conf
+#### Modify ethercat.conf
 
 ```console
 ip addr show
 ```
+
 ## verify ethercat installation
 
 ```console

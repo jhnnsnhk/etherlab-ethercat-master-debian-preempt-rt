@@ -76,7 +76,7 @@ sudo reboot
 uname -a
 ```
 
-# Optional: Kernel Panic Management
+# Resolve Kernel Panic (Optional)
 
 ```console
 cd /lib/modules/6.1.96-rt35

@@ -88,6 +88,13 @@ sudo make install
 sudo reboot
 ```
 
+* verify kernel version
+
+```console
+uname -a
+```
+
+
 * optional kernel panic management
 
 * install vim

@@ -202,7 +202,9 @@ sudo systemctl enable ethercat.service
 ```console
 sudo reboot
 ```
-
+```console
+sudo systemctl status ethercat.service
+```
 
 
 

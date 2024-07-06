@@ -183,8 +183,8 @@ sudo make modules_install
 ip addr show
 ```
 * Copy Relevant MAC Address CTRL + SHIFT + C
-#### Modify ethercat.conf
 
+#### Modify ethercat.conf File
 ```console
 sudo vi /opt/xethercatx/etc/ethercat.conf
 ```
@@ -193,6 +193,12 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 * Navigate to DEVICE_MODULES="" and paste driver keyword
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
+
+#### Copy Ethercat Master
+
+```console
+
+```
 
 #### Start Ethercat Master
 

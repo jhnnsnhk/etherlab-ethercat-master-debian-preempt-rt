@@ -18,7 +18,7 @@ sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/XXX bs=512 count=2048
 ```
 
-# install real time patch
+# Install Real Time Patch
 
 * step 01: update the system
 

@@ -1,6 +1,6 @@
-# Install Real Time Patch
+# Debian Bookworm + PREEMPT_RT Patch + Etherlab EtherCAT Master
 
-#### Install Required Packages
+Step 01: Install Required Packages
 
 ```console
 sudo apt update

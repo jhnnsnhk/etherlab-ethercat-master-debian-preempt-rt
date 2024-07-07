@@ -46,7 +46,7 @@ cd /usr/src/linux-6.1.96 && sudo make menuconfig
 * Processor Type and Features >>> Timer Frequency >>> 1000 Hz >>> Checked
 * Save & Exit
 
-### Step 06: Build Kernel Using All Available CPU Cores
+### Step 06: Build Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 ```

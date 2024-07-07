@@ -9,7 +9,7 @@
 > 
 > Real Time Patch Version 6.1.96-RT35 (03 July 2024)
 
-#### Step 01 >>> Install Required Packages
+#### Step 01 | Install Required Packages
 ```console
 sudo apt update
 ```

@@ -77,16 +77,15 @@ sudo reboot
 uname -a
 ```
 
-# (Optional) Resolve Kernel Panic
+## (Optional) Resolve Kernel Panic
+> [!CAUTION]
+> Steps 11 to XX Are Optional in Case the Reboot Causes a Kernel Panic
 
-* strip unneeded symbols of object files
+#### Step 11 (Optional) | Remove Unnecessary Symbols From Object Files
 ```console
-cd /lib/modules/6.1.96-rt35
+cd /lib/modules/6.1.96-rt35 && sudo find . -name *.ko -exec strip --strip-unneeded {} +
 ```
-```console
-sudo find . -name *.ko -exec strip --strip-unneeded {} +
-```
-* change the compression format
+#### Step 12 (Optional) | Change the Compression Format
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```

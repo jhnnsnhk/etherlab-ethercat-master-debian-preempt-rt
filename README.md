@@ -1,7 +1,10 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
 
 > [!NOTE]  
-> Procedure has been tested with
+> Procedure has been successfully tested with:
+> Debian 12 (Bookworm) Point Release 12.6 (29 June 2024)
+> Kernel Version 6.1.96 (27 June 2024)
+> Real Time Patch Version 6.1.96-RT35 (03 July 2024)
 
 #### Step 01 >>> Install Required Packages
 ```console

@@ -1,7 +1,7 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
 
 > [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+> Procedure has been tested with
 
 #### Step 01 >>> Install Required Packages
 ```console
@@ -21,7 +21,9 @@ sudo reboot
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
-* Selected Kernel Version Must Match Real Time Patch Version
+> [!IMPORTANT]  
+> Selected Kernel Version Must Match Real Time Patch Version
+
 ##### Decompress Kernel Source Code Archive
 ```console
 sudo tar -xvJf /usr/src/linux-6.1.96.tar.xz -C /usr/src

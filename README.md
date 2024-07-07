@@ -1,4 +1,7 @@
-# Install Required Packages
+# Install Real Time Patch
+
+#### Install Required Packages
+
 ```console
 sudo apt update
 ```
@@ -11,8 +14,6 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 ```console
 sudo reboot
 ```
-
-# Install Real Time Patch
 
 #### Download Kernel Source Code Archive
 ```console
@@ -77,9 +78,6 @@ uname -a
 
 # Resolve Kernel Panic (Optional)
 
-```console
-cd /lib/modules/6.1.96-rt35
-```
 * strip unneeded symbols of object files
 ```console
 cd /lib/modules/6.1.96-rt35
@@ -127,21 +125,22 @@ sudo reboot
 uname -a
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Install Ethercat Master for SYSTEMD Distributions
+
+#### Install Required Packages
+
+```console
+sudo apt update
+```
+```console
+sudo apt upgrade -y
+```
+```console
+sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config udev vim wget -y
+```
+```console
+sudo reboot
+```
 
 #### Clone Github Repository
 ```console

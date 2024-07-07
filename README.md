@@ -124,21 +124,6 @@ uname -a
 
 # Install Ethercat Master for SYSTEMD Distributions
 
-#### Install Required Packages
-
-```console
-sudo apt update
-```
-```console
-sudo apt upgrade -y
-```
-```console
-sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config udev vim wget -y
-```
-```console
-sudo reboot
-```
-
 #### Clone Github Repository
 ```console
 cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git

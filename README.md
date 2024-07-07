@@ -111,6 +111,7 @@ sudo reboot
 ```console
 uname -a
 ```
+## Install EtherCAT Master
 > [!WARNING]
 > The official EtherLab documentation for installing the EtherCAT master is tailored to Linux distributions that use the traditional `System V` initialization system based on modifications to `/etc/init.d/` and `/etc/sysconfig/`.
 >

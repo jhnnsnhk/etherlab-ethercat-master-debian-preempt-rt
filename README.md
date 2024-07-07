@@ -208,7 +208,10 @@ sudo reboot
 sudo systemctl status ethercat.service
 ```
 
-
+#### Change File Mode Permissions
+```console
+sudo chmod 666 /dev/EtherCAT0
+```
 
 # misc
 

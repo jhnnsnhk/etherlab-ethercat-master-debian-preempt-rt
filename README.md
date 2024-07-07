@@ -92,10 +92,10 @@ sudo vi /etc/initramfs-tools/initramfs.conf
 ```
 
 change COMPRESS=lz4 to COMPRESS=xz
-
-COMPRESS=xz 
-
-[:wq]
+* VIM Activate Editing Mode >>> i
+COMPRESS=xz
+* VIM Activate Normal Mode >>> Esc
+* VIM Write & Quit >>> :wq + Return
 
 * update initramfs
 

@@ -76,7 +76,7 @@ sudo reboot
 uname -a
 ```
 
-# Resolve Kernel Panic (Optional)
+# (Optional) Resolve Kernel Panic
 
 * strip unneeded symbols of object files
 ```console

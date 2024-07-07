@@ -19,12 +19,12 @@ sudo reboot
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
 * Selected Kernel Version Must Match Real Time Patch Version
-#### Decompress Kernel Source Code Archive
+##### Decompress Kernel Source Code Archive
 ```console
 sudo tar -xvJf /usr/src/linux-6.1.96.tar.xz -C /usr/src
 ```
-### Step 03: Retrieve Real Time Patch
-#### Download Real Time Patch Archive Into Kernel Source Code Directory
+#### Step 03: Retrieve Real Time Patch
+##### Download Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```

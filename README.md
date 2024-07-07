@@ -210,42 +210,7 @@ sudo systemctl status ethercat.service
 
 
 
-#### Create Symbolic Link
-```console
-sudo ln -s /opt/xethercatx/etc/init.d/ethercat /etc/init.d/
-```
-
-#### Copy Sysconfig File
-```console
-sudo cp /opt/xethercatx/etc/ethercat.conf /etc/
-```
-
-#### Start Ethercat Master
-
-```console
-sudo /opt/xethercatx/etc/init.d/ethercat start
-```
-```console
-sudo ln -s /opt/xethercatx/etc/init.d/ethercat /etc/init.d/
-```
-
-## verify ethercat installation
-
-```console
-sudo systemctl status ethercat.service
-```
-
-```console
-sudo systemctl enable ethercat.service
-```
-
-```console
-sudo systemctl start ethercat.service
-```
-
-```console
-sudo systemctl status ethercat.service
-```
+# misc
 
 ```console
 modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1

@@ -77,7 +77,7 @@ sudo reboot
 uname -a
 ```
 > [!CAUTION]
-> (Optional) Resolve Kernel Panic
+> Resolve Kernel Panic (Optional)
 > 
 > Steps 11 to XX Are Optional in Case the Reboot Causes a Kernel Panic
 #### Step 11 | Remove Unnecessary Symbols From Object Files

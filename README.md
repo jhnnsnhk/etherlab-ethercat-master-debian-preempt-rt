@@ -13,6 +13,7 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 sudo reboot
 ```
 ### Step 02: Download Kernel Source Code Archive
+
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
@@ -24,7 +25,7 @@ sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96
 sudo tar -xvf /usr/src/linux-6.1.96.tar.xz
 ```
 
-#### Download Real Time Patch Archive Into Kernel Source Code Directory
+### Step 03: Download Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```

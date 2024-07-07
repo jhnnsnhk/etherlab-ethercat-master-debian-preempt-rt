@@ -1,5 +1,4 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
-
 > [!NOTE]
 > Procedure Has Been Successfully Tested With:
 > 
@@ -8,7 +7,6 @@
 > Kernel Version 6.1.96 (27 June 2024)
 > 
 > Real Time Patch Version 6.1.96-RT35 (03 July 2024)
-
 #### Step 01 | Install Required Packages
 ```console
 sudo apt update
@@ -79,7 +77,7 @@ uname -a
 > [!CAUTION]
 > Resolve Kernel Panic (Optional)
 > 
-> Steps 11 to 16 Are Optional in Case the Reboot Causes a Kernel Panic
+> Step 11 to Step 16 Are Optional in Case the Reboot Causes a Kernel Panic
 #### Step 11 | Remove Unnecessary Symbols From Object Files
 ```console
 cd /lib/modules/6.1.96-rt35 && sudo find . -name *.ko -exec strip --strip-unneeded {} +

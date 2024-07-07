@@ -49,36 +49,30 @@ sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 ```console
 cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
-
-### Step 05: Configure Kernel
+#### Step 05 | Configure Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```
 * General Setup >>> Preemption Model >>> Fully Preemptible Kernel (Real-Time) >>> Checked
 * Processor Type and Features >>> Timer Frequency >>> 1000 Hz >>> Checked
 * Save & Exit
-
-### Step 06: Build Kernel
+#### Step 06 | Build Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 ```
-
-### Step 07: Install Kernel Modules
+#### Step 07 | Install Kernel Modules
 ```console
 cd /usr/src/linux-6.1.96 && sudo make modules_install
 ```
-
-### Step 08: Install Kernel
+#### Step 08 | Install Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make install
 ```
-
-### Step 09: Reboot System
+#### Step 09 | Reboot System
 ```console
 sudo reboot
 ```
-
-### Step 10: Verify Active Kernel Version
+#### Step 10 | Verify Active Kernel Version
 ```console
 uname -a
 ```

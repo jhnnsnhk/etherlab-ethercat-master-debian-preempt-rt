@@ -1,5 +1,5 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT
-# Part A: Real Time Patch
+
 ### Step 01: Install Required Packages
 ```console
 sudo apt update

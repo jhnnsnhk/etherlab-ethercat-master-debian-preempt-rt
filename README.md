@@ -1,8 +1,7 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #31708f; background-color: #d9edf7; border-color: #bce8f1;">
-I am a info message
-</div>
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
 #### Step 01 >>> Install Required Packages
 ```console

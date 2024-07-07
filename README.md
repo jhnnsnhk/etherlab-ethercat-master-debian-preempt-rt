@@ -109,49 +109,42 @@ uname -a
 ```
 > [!WARNING]
 > SYSTEMD Distributions
-#### Clone Etherlab Ethercat Master Github Repository
+#### Step 17 | Clone Etherlab Ethercat Master Github Repository
 ```console
 cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
-
-#### Checkout Latest Stable Branch
+#### Step 18 | Checkout Latest Stable Branch
 ```console
  cd ~/ethercat/ && git checkout stable-1.6
 ```
-
-#### Run Bootstrap Script
+#### Step 19 | Run Bootstrap Script
 ```console
 cd ~/ethercat/ && sudo ./bootstrap
 ```
-
-#### Configure Ethercat Master
+#### Step 20 | Configure Ethercat Master
 ```console
 cd ~/ethercat/ && sudo ./configure --enable-8139too=no --prefix=/opt/etherlab
 ```
-
-#### Build Ethercat Master
+#### Step 21 | Build Ethercat Master
 ```console
-sudo make all modules
+cd ~/ethercat/ && sudo make all modules
 ```
-
-#### Install Ethercat Master
+#### Step 22 | Install Ethercat Master
 ```console
-sudo make install
+cd ~/ethercat/ && sudo make install
 ```
 ```console
-sudo make modules_install
+cd ~/ethercat/ && sudo make modules_install
 ```
 ```console
-sudo depmod
+cd ~/ethercat/ && sudo depmod
 ```
-#### Identify Relevant Network Interface MAC Address
-
+#### Step 23 | Identify Relevant Network Interface MAC Address
 ```console
 ip addr show
 ```
-* Copy Relevant MAC Address CTRL + SHIFT + C
-
-#### Modify ethercat.conf File
+##### Copy Relevant MAC Address CTRL + SHIFT + C
+#### Step 24 | Modify ethercat.conf File
 ```console
 sudo vi /opt/etherlab/etc/ethercat.conf
 ```

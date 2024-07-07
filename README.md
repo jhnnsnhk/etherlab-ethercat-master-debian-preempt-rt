@@ -31,7 +31,7 @@ sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/proj
 ```
 * Select Real Time Patch Version That Matches the Kernel Version
 * Patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
-#### Decompress Real Time Patch Archive
+#### Decompress Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 ```

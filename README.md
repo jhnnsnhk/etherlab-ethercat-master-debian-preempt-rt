@@ -12,36 +12,35 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 ```console
 sudo reboot
 ```
-### Step 02: Download Kernel Source Code Archive
-
+### Step 02: Get Kernel
+#### Download Kernel Source Code Archive
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```
 * Select Kernel Version That Has a Matching Real Time Patch Version
 * Kernels: https://cdn.kernel.org/pub/linux/kernel/
-
 #### Decompress Kernel Source Code Archive
 ```console
 sudo tar -xvf /usr/src/linux-6.1.96.tar.xz
 ```
 
-### Step 03: Download Real Time Patch Archive Into Kernel Source Code Directory
+### Step 03: Get Real Time Patch
+#### Download Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
 * Select Real Time Patch Version That Matches the Kernel Version
 * Patches: https://cdn.kernel.org/pub/linux/kernel/projects/rt/
-
 #### Decompress Real Time Patch Archive
 ```console
 sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 ```
-
 #### Apply Real Time Patch
 ```console
 cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
-#### Configure Kernel
+
+### Step 04: Configure Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```

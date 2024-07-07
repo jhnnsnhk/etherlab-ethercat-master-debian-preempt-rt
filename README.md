@@ -44,8 +44,8 @@ cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```console
 cd /usr/src/linux-6.1.96 && sudo make menuconfig
 ```
-* General Setup >>> Preemption Model >>> Fully Preemptible Kernel (Real-Time)
-* Processor Type and Features >>> Timer Frequency >>> 1000 Hz
+* General Setup >>> Preemption Model >>> Fully Preemptible Kernel (Real-Time) >>> Checked
+* Processor Type and Features >>> Timer Frequency >>> 1000 Hz >>> Checked
 * Save & Exit
 
 #### Build Kernel Using All Available CPU Cores

@@ -12,7 +12,7 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 ```console
 sudo reboot
 ```
-### Step 02: Get Kernel
+### Step 02: Get Kernel Source Code
 #### Download Kernel Source Code Archive
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz

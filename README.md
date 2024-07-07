@@ -79,7 +79,7 @@ uname -a
 > [!CAUTION]
 > Resolve Kernel Panic (Optional)
 > 
-> Steps 11 to XX Are Optional in Case the Reboot Causes a Kernel Panic
+> Steps 11 to 16 Are Optional in Case the Reboot Causes a Kernel Panic
 #### Step 11 | Remove Unnecessary Symbols From Object Files
 ```console
 cd /lib/modules/6.1.96-rt35 && sudo find . -name *.ko -exec strip --strip-unneeded {} +
@@ -88,37 +88,24 @@ cd /lib/modules/6.1.96-rt35 && sudo find . -name *.ko -exec strip --strip-unneed
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```
-##### Change Compression Algorithm From LZ4 to XZ
+##### Change Compression Algorithm From ZSTD to XZ
 * VIM Activate Editing Mode >>> i
 COMPRESS=xz
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
-
-* update initramfs
-
+#### Step 13 | Update the Initial Ram Filesystem for the Current Kernel Version
 ```console
 sudo update-initramfs -u
 ```
-
-* verify boot directory
-* config-6.1.96-rt35
-* initrd.img-6.1.96-rt35
-* vmlinuz-6.1.96-rt35
-
-* update grub
-
+#### Step 14 | Update Grub (Grand Unified Bootloader) Configuration Files
 ```console
 sudo update-grub
 ```
-
-* reboot
-
+#### Step 15 | Reboot System
 ```console
 sudo reboot
 ```
-
-* verify
-
+#### Step 16 | Verify Active Kernel Version
 ```console
 uname -a
 ```

@@ -1,4 +1,4 @@
-# Debian 12 + PREEMPT_RT + Etherlab EtherCAT
+# Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
 
 ### Step 01: Install Required Packages
 ```console

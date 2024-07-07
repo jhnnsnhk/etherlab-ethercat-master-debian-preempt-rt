@@ -46,27 +46,27 @@ cd /usr/src/linux-6.1.96 && sudo make menuconfig
 * Processor Type and Features >>> Timer Frequency >>> 1000 Hz >>> Checked
 * Save & Exit
 
-#### Build Kernel Using All Available CPU Cores
+### Step 06: Build Kernel Using All Available CPU Cores
 ```console
 cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
 ```
 
-#### Install Kernel Modules
+### Step 07: Install Kernel Modules
 ```console
 cd /usr/src/linux-6.1.96 && sudo make modules_install
 ```
 
-#### Install Kernel
+### Step 08: Install Kernel
 ```console
 cd /usr/src/linux-6.1.96 && sudo make install
 ```
 
-#### Reboot System
+### Step 09: Reboot System
 ```console
 sudo reboot
 ```
 
-#### Verify Active Kernel Version
+### Step 10: Verify Active Kernel Version
 ```console
 uname -a
 ```

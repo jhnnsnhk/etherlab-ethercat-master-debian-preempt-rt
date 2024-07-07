@@ -90,7 +90,7 @@ sudo vi /etc/initramfs-tools/initramfs.conf
 ```
 ##### Change Compression Algorithm From ZSTD to XZ
 * VIM Activate Editing Mode >>> i
-COMPRESS=xz
+* COMPRESS=xz
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
 #### Step 13 | Update the Initial Ram Filesystem for the Current Kernel Version

@@ -199,11 +199,11 @@ sudo vi /opt/xethercatx/etc/ethercat.conf
 ```console
 sudo systemctl enable ethercat.service
 ```
-* Reboot in order to test if the service starts during the process
+* Reboot in order to automatically start the service
 ```console
 sudo reboot
 ```
-* Verify if the service is active
+* Verify if the service has automatically started
 ```console
 sudo systemctl status ethercat.service
 ```

@@ -9,6 +9,8 @@
 > Kernel Version 6.1.96 (27 June 2024)
 > 
 > Real-Time Patch Version 6.1.96-RT35 (03 July 2024)
+
+## Install PREEMPT_RT Patch
 #### Step 01 | Install Required Packages
 ```console
 sudo apt update

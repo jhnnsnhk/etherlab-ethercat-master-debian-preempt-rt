@@ -201,8 +201,3 @@ if(NOT ETHERCAT_LIBRARY)
     message(FATAL_ERROR "Ethercat Library Has Not Been Found")
 endif()
 ```
-
-# misc
-```console
-modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1
-```

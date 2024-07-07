@@ -22,9 +22,8 @@ sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96
 * Kernels: https://cdn.kernel.org/pub/linux/kernel/
 #### Decompress Kernel Source Code Archive
 ```console
-sudo tar -xvf /usr/src/linux-6.1.96.tar.xz
+sudo tar -xvJf /usr/src/linux-6.1.96.tar.xz -C /usr/src
 ```
-
 ### Step 03: Get Real Time Patch
 #### Download Real Time Patch Archive Into Kernel Source Code Directory
 ```console

@@ -8,7 +8,7 @@ sudo apt update
 sudo apt upgrade -y
 ```
 ```console
-sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool mlocate pkg-config udev vim wget -y
+sudo apt install autoconf automake bc bison build-essential dwarves flex git libelf-dev libncurses-dev libssl-dev libtool pkg-config udev vim wget -y
 ```
 ```console
 sudo reboot

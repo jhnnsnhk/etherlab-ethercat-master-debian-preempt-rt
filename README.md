@@ -1,4 +1,4 @@
-# EtherLab EtherCAT Master on Debian 12 with PREEMPT_RT Patch from Scratch
+# Installing EtherLab EtherCAT Master on Debian 12 with PREEMPT_RT Patch
 > [!NOTE]
 > Procedure Has Been Successfully Tested With:
 > 

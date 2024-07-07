@@ -143,37 +143,35 @@ cd ~/ethercat/ && sudo depmod
 ```console
 ip addr show
 ```
-##### Copy Relevant MAC Address CTRL + SHIFT + C
+##### Copy Relevant MAC Address (CTRL + SHIFT + C)
 #### Step 24 | Modify ethercat.conf File
 ```console
 sudo vi /opt/etherlab/etc/ethercat.conf
 ```
 * VIM Activate Editing Mode >>> i
-* Navigate to MASTER0_DEVICE="" and paste MAC address CTRL + SHIFT + V
-* Navigate to DEVICE_MODULES="" and paste driver keyword
+* MASTER0_DEVICE="xx:xx:xx:xx:xx:xx" (CTRL + SHIFT + V)
+* DEVICE_MODULES="generic"
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return
 
-#### Enable Service to Start Automatically at System Startup
+#### Step 25 | Enable Service to Start Automatically at System Startup
 ```console
 sudo systemctl enable ethercat.service
 ```
-* Reboot in order to automatically start the service
+#### Step 26 | Reboot in Order to Automatically Start the Service
 ```console
 sudo reboot
 ```
-* Verify if the service has automatically started
+#### Step 27 | Verify if the Service Has Automatically Started
 ```console
 sudo systemctl status ethercat.service
 ```
-
-#### Change File Mode Permissions
+#### Step 28 | Change File Mode Permissions
 ```console
 sudo chmod 666 /dev/EtherCAT0
 ```
 
 # misc
-
 ```console
 modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1
 ```

@@ -41,11 +41,11 @@ sudo tar -xvJf /usr/src/linux-6.1.96.tar.xz -C /usr/src
 ```console
 sudo wget -P /usr/src/linux-6.1.96/ https://cdn.kernel.org/pub/linux/kernel/projects/rt/6.1/patch-6.1.96-rt35.patch.xz
 ```
-#### Decompress Real Time Patch Archive Into Kernel Source Code Directory
+##### Decompress Real Time Patch Archive Into Kernel Source Code Directory
 ```console
 sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 ```
-### Step 04: Apply Real Time Patch
+#### Step 04 | Apply Real Time Patch
 ```console
 cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```

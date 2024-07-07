@@ -1,6 +1,6 @@
 # Debian 12 + PREEMPT_RT + Etherlab EtherCAT Master
 
-> **NOTE**
+> [!NOTE]
 > Procedure Has Been Successfully Tested With:
 > 
 > Debian 12 (Bookworm) Point Release 12.6 (29 June 2024)

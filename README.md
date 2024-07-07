@@ -1,7 +1,5 @@
 # Debian Bookworm + PREEMPT_RT Patch + Etherlab EtherCAT Master
-
 ### Step 01: Install Required Packages
-
 ```console
 sudo apt update
 ```
@@ -14,8 +12,7 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 ```console
 sudo reboot
 ```
-
-#### Download Kernel Source Code Archive
+### Step 02: Download Kernel Source Code Archive
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```

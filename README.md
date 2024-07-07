@@ -171,6 +171,10 @@ sudo systemctl status ethercat.service
 sudo chmod 666 /dev/EtherCAT0
 ```
 
+
+
+
+
 # misc
 ```console
 modprobe ec_master main_devices=30:2f:1e:29:45:85 queue=1

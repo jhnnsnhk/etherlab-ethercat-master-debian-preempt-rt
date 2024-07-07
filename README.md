@@ -108,7 +108,8 @@ sudo reboot
 uname -a
 ```
 > [!WARNING]
-> SYSTEMD Distributions
+> The official EtherLab documentation for installing the EtherCAT master is tailored towards Linux distributions using the traditional System V initialization system. Therefore, it is not applicable to Linux distributions such as the latest Debian 12 (Bookworm) release, which relies on the modern systemd initialization system and service manager.
+
 #### Step 17 | Clone Etherlab Ethercat Master Github Repository
 ```console
 cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git

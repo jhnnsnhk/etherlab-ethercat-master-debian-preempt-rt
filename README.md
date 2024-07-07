@@ -162,7 +162,7 @@ sudo systemctl enable ethercat.service
 ```console
 sudo reboot
 ```
-#### Step 27 | Verify if the Service Has Automatically Started
+#### Step 27 | Verify if the Service Is Enabled and Active
 ```console
 sudo systemctl status ethercat.service
 ```

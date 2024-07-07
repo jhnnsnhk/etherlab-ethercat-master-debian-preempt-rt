@@ -22,10 +22,10 @@ sudo apt install autoconf automake bc bison build-essential dwarves flex git lib
 ```console
 sudo reboot
 ```
-#### Step 02 >>> Retrieve Kernel Source Code
+#### Step 02 | Retrieve Kernel Source Code
 ##### Download Kernel Source Code Archive
 > [!IMPORTANT]  
-> Selected Kernel Version Must Match Real Time Patch Version
+> The Selected Kernel Version Must Match the Real-Time Patch Version
 ```console
 sudo wget -P /usr/src/ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.96.tar.xz
 ```

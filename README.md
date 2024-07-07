@@ -1,6 +1,6 @@
 # Debian Bookworm + PREEMPT_RT Patch + Etherlab EtherCAT Master
 
-Step 01: Install Required Packages
+### Step 01: Install Required Packages
 
 ```console
 sudo apt update

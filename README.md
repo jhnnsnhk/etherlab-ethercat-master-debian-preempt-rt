@@ -1,12 +1,14 @@
-# Installing EtherLab EtherCAT Master + Debian 12 + PREEMPT_RT Patch
+# EtherLab EtherCAT Master on Debian 12 with PREEMPT_RT Patch
 > [!NOTE]
-> Procedure Has Been Successfully Tested With:
+> This manual assumes a newly installed Debian 12 distribution on a freshly formatted system in pristine condition.
+> 
+> The procedure has been successfully tested using the following software:
 > 
 > Debian 12 (Bookworm) Point Release 12.6 (29 June 2024)
 > 
 > Kernel Version 6.1.96 (27 June 2024)
 > 
-> Real Time Patch Version 6.1.96-RT35 (03 July 2024)
+> Real-Time Patch Version 6.1.96-RT35 (03 July 2024)
 #### Step 01 | Install Required Packages
 ```console
 sudo apt update

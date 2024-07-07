@@ -175,7 +175,7 @@ sudo systemctl status ethercat.service
 ```
 
 #### Optional Library Integration Using CMake
-```console
+```cmake
 # Add the path to the ethercat include directory
 include_directories(/opt/etherlab/include)
 

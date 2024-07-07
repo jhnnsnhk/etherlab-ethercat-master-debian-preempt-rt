@@ -149,7 +149,7 @@ ip addr show
 sudo vi /opt/etherlab/etc/ethercat.conf
 ```
 * VIM Activate Editing Mode >>> i
-* MASTER0_DEVICE="xx:xx:xx:xx:xx:xx" (CTRL + SHIFT + V)
+* MASTER0_DEVICE="aa:bb:cc:dd:ee:ff" (CTRL + SHIFT + V)
 * DEVICE_MODULES="generic"
 * VIM Activate Normal Mode >>> Esc
 * VIM Write & Quit >>> :wq + Return

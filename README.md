@@ -174,10 +174,21 @@ sudo reboot
 sudo systemctl status ethercat.service
 ```
 
+#### Optional Library Integration Using CMake
+```console
+# Add the path to the ethercat include directory
+include_directories(/opt/etherlab/include)
 
+# Add the path to the ethercat library directory
+link_directories(/opt/etherlab/lib)
 
+# Find and link the ethercat library
+find_library(ETHERCAT_LIBRARY NAMES ethercat PATHS /opt/etherlab/lib)
 
-
+if(NOT ETHERCAT_LIBRARY)
+    message(FATAL_ERROR "Ethercat Library Has Not Been Found")
+endif()
+```
 
 # misc
 ```console

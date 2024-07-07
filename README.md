@@ -110,7 +110,7 @@ uname -a
 
 # Install Ethercat Master for SYSTEMD Distributions
 
-#### Clone Github Repository
+#### Clone Etherlab Ethercat Master Github Repository
 ```console
 cd ~ && git clone https://gitlab.com/etherlab.org/ethercat.git
 ```
@@ -127,7 +127,7 @@ cd ~/ethercat/ && sudo ./bootstrap
 
 #### Configure Ethercat Master
 ```console
-cd ~/ethercat/ && sudo ./configure --enable-8139too=no --prefix=/opt/xethercatx
+cd ~/ethercat/ && sudo ./configure --enable-8139too=no --prefix=/opt/etherlab
 ```
 
 #### Build Ethercat Master
@@ -154,7 +154,7 @@ ip addr show
 
 #### Modify ethercat.conf File
 ```console
-sudo vi /opt/xethercatx/etc/ethercat.conf
+sudo vi /opt/etherlab/etc/ethercat.conf
 ```
 * VIM Activate Editing Mode >>> i
 * Navigate to MASTER0_DEVICE="" and paste MAC address CTRL + SHIFT + V

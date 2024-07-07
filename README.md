@@ -88,8 +88,7 @@ cd /lib/modules/6.1.96-rt35 && sudo find . -name *.ko -exec strip --strip-unneed
 ```console
 sudo vi /etc/initramfs-tools/initramfs.conf
 ```
-
-change COMPRESS=lz4 to COMPRESS=xz
+##### Change Compression Algorithm From LZ4 to XZ
 * VIM Activate Editing Mode >>> i
 COMPRESS=xz
 * VIM Activate Normal Mode >>> Esc

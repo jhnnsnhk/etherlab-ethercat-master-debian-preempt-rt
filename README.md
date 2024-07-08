@@ -68,13 +68,13 @@ sudo xz -d /usr/src/linux-6.1.96/patch-6.1.96-rt35.patch.xz
 #### Step 04 | Apply Real Time Patch
 
 ```console
-cd /usr/src/linux-6.1.96 && sudo patch -p1 < patch-6.1.96-rt35.patch
+cd /usr/src/linux-6.1.96/ && sudo patch -p1 < patch-6.1.96-rt35.patch
 ```
 
 #### Step 05 | Configure Kernel
 
 ```console
-cd /usr/src/linux-6.1.96 && sudo make menuconfig
+cd /usr/src/linux-6.1.96/ && sudo make menuconfig
 ```
 
 * General Setup >>> Preemption Model >>> Fully Preemptible Kernel (Real-Time) >>> Checked
@@ -84,19 +84,19 @@ cd /usr/src/linux-6.1.96 && sudo make menuconfig
 #### Step 06 | Build Kernel
 
 ```console
-cd /usr/src/linux-6.1.96 && sudo make -j$(nproc)
+cd /usr/src/linux-6.1.96/ && sudo make -j$(nproc)
 ```
 
 #### Step 07 | Install Kernel Modules
 
 ```console
-cd /usr/src/linux-6.1.96 && sudo make modules_install
+cd /usr/src/linux-6.1.96/ && sudo make modules_install
 ```
 
 #### Step 08 | Install Kernel
 
 ```console
-cd /usr/src/linux-6.1.96 && sudo make install
+cd /usr/src/linux-6.1.96/ && sudo make install
 ```
 
 #### Step 09 | Reboot System

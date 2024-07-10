@@ -242,7 +242,7 @@ sudo systemctl enable ethercat.service
 sudo reboot
 ```
 
-#### Step 27 | Change File Mode Permissions
+#### Step 27 | Change File Mode Permissions (Temporary)
 
 ```console
 sudo chmod 666 /dev/EtherCAT0
@@ -252,6 +252,26 @@ sudo chmod 666 /dev/EtherCAT0
 
 ```console
 sudo systemctl status ethercat.service
+```
+
+#### Step 29 | Change File Mode Permissions (Permanent)
+
+```console
+sudo vim /etc/udev/rules.d/99-ethercat.rules
+```
+
+* Add the following line to set the permissions for /dev/EtherCAT0:
+
+```console
+KERNEL=="EtherCAT0", MODE="0666"
+```
+
+```console
+sudo udevadm control --reload-rules
+```
+
+```console
+sudo udevadm trigger
 ```
 
 #### Optional Library Integration Using CMake

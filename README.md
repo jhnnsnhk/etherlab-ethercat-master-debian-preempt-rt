@@ -277,9 +277,11 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-#### Step 30 | Create a symbolic link to conveniently open the EtherCAT command line interface
+#### Step 30 | Create a symbolic link to conveniently utilize the EtherCAT command line tool
 
-
+```console
+sudo ln -s /opt/etherlab/bin/ethercat /usr/local/bin/ethercat
+```
 
 #### Additonal Information: EtherCAT service can be controlled using the following commands:
 ```console

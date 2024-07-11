@@ -276,7 +276,19 @@ sudo udevadm control --reload-rules
 ```console
 sudo udevadm trigger
 ```
-
+#### Information: EtherCAT Service can be controlled using the following commands:
+```console
+sudo systemctl enable ethercat.service
+```
+```console
+sudo systemctl start ethercat.service
+```
+```console
+sudo systemctl stop ethercat.service
+```
+```console
+sudo systemctl disable ethercat.service
+```
 #### Optional Library Integration Using CMake
 
 ```cmake

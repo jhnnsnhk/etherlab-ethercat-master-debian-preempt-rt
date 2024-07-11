@@ -222,7 +222,7 @@ ip addr show
 #### Step 24 | Modify ethercat.conf File
 
 ```console
-sudo vi /opt/etherlab/etc/ethercat.conf
+sudo vim /opt/etherlab/etc/ethercat.conf
 ```
 
 * VIM Activate Editing Mode >>> i

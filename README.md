@@ -249,13 +249,13 @@ sudo reboot
 sudo systemctl status ethercat.service
 ```
 
-#### Step 28 | Change File Mode Permissions (Temporary)
+#### Step 28 | Change File Mode Permissions (Method 01: Temporary)
 
 ```console
 sudo chmod 666 /dev/EtherCAT0
 ```
 
-#### Step 29 | Change File Mode Permissions (Permanent)
+#### Step 29 | Change File Mode Permissions (Method 02: Permanent)
 
 ```console
 sudo vim /etc/udev/rules.d/99-ethercat.rules

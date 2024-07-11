@@ -289,6 +289,9 @@ sudo systemctl stop ethercat.service
 ```console
 sudo systemctl disable ethercat.service
 ```
+```console
+sudo systemctl status ethercat.service
+```
 #### Optional Library Integration Using CMake
 
 ```cmake

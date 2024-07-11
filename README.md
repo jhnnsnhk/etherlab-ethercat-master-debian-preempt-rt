@@ -276,7 +276,12 @@ sudo udevadm control --reload-rules
 ```console
 sudo udevadm trigger
 ```
-#### Information: EtherCAT Service can be controlled using the following commands:
+
+#### Step 30 | Create a symbolic link to conveniently open the EtherCAT command line interface
+
+
+
+#### Additonal Information: EtherCAT service can be controlled using the following commands:
 ```console
 sudo systemctl enable ethercat.service
 ```
@@ -292,7 +297,8 @@ sudo systemctl disable ethercat.service
 ```console
 sudo systemctl status ethercat.service
 ```
-#### Optional Library Integration Using CMake
+
+#### Additonal Information: EtherCAT libraries can be integrated in CMake as follows:
 
 ```cmake
 # CMakeLists.txt

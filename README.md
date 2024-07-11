@@ -283,6 +283,11 @@ sudo udevadm trigger
 sudo ln -s /opt/etherlab/bin/ethercat /usr/local/bin/ethercat
 ```
 
+* Verify whether the command line tool is operational
+```console
+ethercat -h
+```
+
 #### Additonal Information: EtherCAT Master Kernel Modules service can be controlled using the following commands:
 ```console
 sudo systemctl enable ethercat.service

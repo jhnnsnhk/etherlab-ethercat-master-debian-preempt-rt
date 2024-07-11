@@ -242,17 +242,20 @@ sudo systemctl enable ethercat.service
 sudo reboot
 ```
 
-#### Step 27 | Change File Mode Permissions (Temporary)
+#### Step 27 | Verify if the Service Is Enabled and Active
+
+```console
+sudo systemctl status ethercat.service
+```
+
+
+#### Step 28 | Change File Mode Permissions (Temporary)
 
 ```console
 sudo chmod 666 /dev/EtherCAT0
 ```
 
-#### Step 28 | Verify if the Service Is Enabled and Active
 
-```console
-sudo systemctl status ethercat.service
-```
 
 #### Step 29 | Change File Mode Permissions (Permanent)
 

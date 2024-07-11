@@ -232,6 +232,7 @@ sudo vim /opt/etherlab/etc/ethercat.conf
 * VIM Write & Quit >>> :wq + Return
 
 #### Step 25 | Enable Service to Start Automatically at System Startup
+
 ```console
 sudo systemctl enable ethercat.service
 ```
@@ -242,20 +243,17 @@ sudo systemctl enable ethercat.service
 sudo reboot
 ```
 
-#### Step 27 | Verify if the Service Is Enabled and Active
+#### Step 27 | Verify whether the Service Is Enabled and Active
 
 ```console
 sudo systemctl status ethercat.service
 ```
-
 
 #### Step 28 | Change File Mode Permissions (Temporary)
 
 ```console
 sudo chmod 666 /dev/EtherCAT0
 ```
-
-
 
 #### Step 29 | Change File Mode Permissions (Permanent)
 
